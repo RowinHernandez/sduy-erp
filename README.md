@@ -1,4 +1,4 @@
 sduy-erp
 ========
 
-erp for sduy's business
+esto es un programa para administrar mi negocio
