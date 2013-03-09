@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<%= form_for(@persona) do |f| %>
+  <div class="form">
+    <ul>
+      <li>
+        <%= f.label :id, 'ID:'%>
+        <%= f.text_field :id ,readonly:true%>
+      </li>
+      <li>
+        <%= f.label :nombre, 'Nombre:'%>
+        <%= f.text_field :nombre ,readonly:true%>
+      </li>
+      <li>
+        <%= f.label :telefono, 'Telefono:'%>
+        <%= f.text_field :telefono ,readonly:true%>
+      </li>
+      <li>
+        <%= f.label :email, 'E-Mail:'%>
+        <%= f.text_field :email ,readonly:true%>
+      </li>
+    </ul>
+  </div>
+<% end %>
+
+<%= link_to 'Edit', edit_persona_path(@persona) %> |
+<%= link_to 'Back', personas_path %>
