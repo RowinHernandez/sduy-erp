@@ -1,0 +1,1239 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-08 11:36:39 -0430
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (20.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (67.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePersonas (20130308162912)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (99.7ms)[0m  [1mCREATE TABLE "personas" ("id" serial primary key, "nombre" character varying(255), "telefono" character varying(255), "email" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130308162912')
+  [1m[36m (16.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-08 12:07:35 -0430
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:12:20 -0430
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/personas"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/persona" for 127.0.0.1 at 2013-03-08 12:12:23 -0430
+
+ActionController::RoutingError (No route matches [GET] "/persona"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/persona/1" for 127.0.0.1 at 2013-03-08 12:12:31 -0430
+
+ActionController::RoutingError (No route matches [GET] "/persona/1"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/personas/1" for 127.0.0.1 at 2013-03-08 12:12:35 -0430
+
+ActionController::RoutingError (No route matches [GET] "/personas/1"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-08 12:13:34 -0430
+Served asset /rails.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-08 12:13:36 -0430
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-08 12:13:36 -0430
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-08 12:13:37 -0430
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-08 12:13:37 -0430
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-08 12:13:53 -0430
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2013-03-08 12:13:57 -0430
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Processing by Rails::InfoController#properties as HTML
+  Rendered inline template (1.5ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:14:41 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (0.9ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (3.4ms)
+Compiled application.css  (0ms)  (pid 8359)
+Compiled jquery.js  (2ms)  (pid 8359)
+Compiled jquery_ujs.js  (0ms)  (pid 8359)
+Compiled application.js  (32ms)  (pid 8359)
+Completed 200 OK in 122ms (Views: 57.4ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:14:41 -0430
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:41 -0430
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:41 -0430
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:41 -0430
+Served asset /application.js - 200 OK (29ms)
+
+
+Started GET "/personas/1" for 127.0.0.1 at 2013-03-08 12:14:45 -0430
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersona Load (2.1ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered personas/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 13ms (Views: 7.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:14:45 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:45 -0430
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:45 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:45 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas/new" for 127.0.0.1 at 2013-03-08 12:14:49 -0430
+Processing by PersonasController#new as HTML
+  Rendered personas/_form.html.erb (52.9ms)
+  Rendered personas/new.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:14:49 -0430
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:49 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:49 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:49 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:14:50 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (0.8ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:14:50 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:50 -0430
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:50 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:14:50 -0430
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:18:27 -0430
+Processing by PersonasController#index as HTML
+  [1m[36mPersona Load (0.6ms)[0m  [1mSELECT "personas".* FROM "personas" [0m
+  Rendered personas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:18:27 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:18:27 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:18:27 -0430
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:18:27 -0430
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/personas/1" for 127.0.0.1 at 2013-03-08 12:20:04 -0430
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPersona Load (0.9ms)[0m  SELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered personas/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:20:05 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:20:05 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:20:05 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:20:05 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas/1/edit" for 127.0.0.1 at 2013-03-08 12:20:07 -0430
+Processing by PersonasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersona Load (1.3ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered personas/_form.html.erb (1.8ms)
+  Rendered personas/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:20:07 -0430
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:20:07 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:20:07 -0430
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:20:07 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:20:19 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (0.7ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:20:20 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:20:20 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:20:20 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:20:20 -0430
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/personas/1/edit" for 127.0.0.1 at 2013-03-08 12:23:57 -0430
+Processing by PersonasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersona Load (0.4ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered personas/_form.html.erb (1.9ms)
+  Rendered personas/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:23:57 -0430
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:23:57 -0430
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:23:57 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:23:57 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started PUT "/personas/1" for 127.0.0.1 at 2013-03-08 12:24:11 -0430
+Processing by PersonasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kqI7jGp2insKsWYcQPvKllAglWGe5J36iFLs2NIT7g=", "persona"=>{"nombre"=>"Rowin K. Hernandez"}, "commit"=>"Update Persona", "id"=>"1"}
+  [1m[35mPersona Load (0.4ms)[0m  SELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.4ms)[0m  UPDATE "personas" SET "nombre" = 'Rowin K. Hernandez', "updated_at" = '2013-03-08 16:54:11.442660' WHERE "personas"."id" = 1
+  [1m[36m (9.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/personas/1
+Completed 302 Found in 28ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/personas/1" for 127.0.0.1 at 2013-03-08 12:24:11 -0430
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPersona Load (0.4ms)[0m  SELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered personas/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:24:11 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:11 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:11 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:11 -0430
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:24:15 -0430
+Processing by PersonasController#index as HTML
+  [1m[36mPersona Load (0.8ms)[0m  [1mSELECT "personas".* FROM "personas" [0m
+  Rendered personas/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:24:15 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:15 -0430
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:15 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:15 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:24:44 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (0.9ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:24:44 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:44 -0430
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:44 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:44 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/personas/1/edit" for 127.0.0.1 at 2013-03-08 12:24:45 -0430
+Processing by PersonasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersona Load (0.4ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered personas/_form.html.erb (3.4ms)
+  Rendered personas/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:24:45 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:45 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:45 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:45 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:24:50 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (0.5ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:24:51 -0430
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:51 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:51 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:51 -0430
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/personas/1" for 127.0.0.1 at 2013-03-08 12:24:57 -0430
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersona Load (0.7ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered personas/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:24:57 -0430
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:57 -0430
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:57 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:24:57 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:25:00 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (1.1ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:25:00 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:00 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:00 -0430
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:00 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas/new" for 127.0.0.1 at 2013-03-08 12:25:09 -0430
+Processing by PersonasController#new as HTML
+  Rendered personas/_form.html.erb (1.6ms)
+  Rendered personas/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:25:09 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:09 -0430
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:09 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:09 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:25:11 -0430
+Processing by PersonasController#index as HTML
+  [1m[36mPersona Load (0.4ms)[0m  [1mSELECT "personas".* FROM "personas" [0m
+  Rendered personas/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:25:11 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:11 -0430
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:11 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:11 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/personas/new" for 127.0.0.1 at 2013-03-08 12:25:12 -0430
+Processing by PersonasController#new as HTML
+  Rendered personas/_form.html.erb (1.8ms)
+  Rendered personas/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:25:12 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:12 -0430
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:12 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:12 -0430
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/personas/new" for 127.0.0.1 at 2013-03-08 12:25:31 -0430
+Processing by PersonasController#new as HTML
+  Rendered personas/_form.html.erb (3.1ms)
+  Rendered personas/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:25:31 -0430
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:31 -0430
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:31 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:31 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:25:33 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (0.8ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:25:33 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:33 -0430
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:33 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:33 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/personas/3/edit" for 127.0.0.1 at 2013-03-08 12:25:35 -0430
+Processing by PersonasController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPersona Load (0.7ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered personas/_form.html.erb (1.6ms)
+  Rendered personas/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:35 -0430
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:25:35 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:35 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:35 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas/3" for 127.0.0.1 at 2013-03-08 12:25:37 -0430
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPersona Load (0.7ms)[0m  SELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered personas/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:25:37 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:37 -0430
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:37 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:37 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:25:41 -0430
+Processing by PersonasController#index as HTML
+  [1m[36mPersona Load (0.5ms)[0m  [1mSELECT "personas".* FROM "personas" [0m
+  Rendered personas/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:25:42 -0430
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:42 -0430
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:42 -0430
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:42 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/personas/new" for 127.0.0.1 at 2013-03-08 12:25:44 -0430
+Processing by PersonasController#new as HTML
+  Rendered personas/_form.html.erb (2.1ms)
+  Rendered personas/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:25:44 -0430
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:44 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:44 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:25:44 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:27:44 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (0.4ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:27:45 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:27:45 -0430
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:27:45 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:27:45 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/personas/3" for 127.0.0.1 at 2013-03-08 12:27:46 -0430
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPersona Load (0.4ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered personas/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:27:46 -0430
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:27:46 -0430
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:27:46 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:27:46 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas/3" for 127.0.0.1 at 2013-03-08 12:28:51 -0430
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPersona Load (0.4ms)[0m  SELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered personas/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:28:51 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:28:51 -0430
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:28:51 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:28:51 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas/3" for 127.0.0.1 at 2013-03-08 12:29:40 -0430
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPersona Load (1.0ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered personas/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:29:41 -0430
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:29:41 -0430
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:29:41 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:29:41 -0430
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:29:45 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (1.0ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:29:46 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:29:46 -0430
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:29:46 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:29:46 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/personas/2/edit" for 127.0.0.1 at 2013-03-08 12:29:47 -0430
+Processing by PersonasController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPersona Load (0.6ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered personas/_form.html.erb (1.4ms)
+  Rendered personas/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:29:47 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:29:47 -0430
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:29:47 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:29:47 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:30:03 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (0.4ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:30:03 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:30:03 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:30:03 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:30:03 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/personas/2/edit" for 127.0.0.1 at 2013-03-08 12:30:05 -0430
+Processing by PersonasController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPersona Load (0.3ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered personas/_form.html.erb (2.9ms)
+  Rendered personas/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:30:05 -0430
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:30:05 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:30:05 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:30:05 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePersonas (20130308162912)
+Migrating to PersonasAddUniqueNombre (20130308170151)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (67.4ms)[0m  [1mCREATE UNIQUE INDEX "index_personas_on_nombre" ON "personas" ("nombre")[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130308170151')
+  [1m[36m (10.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/personas/" for 127.0.0.1 at 2013-03-08 12:38:41 -0430
+Connecting to database specified by database.yml
+Processing by PersonasController#index as HTML
+  [1m[36mPersona Load (0.7ms)[0m  [1mSELECT "personas".* FROM "personas" [0m
+  Rendered personas/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 88ms (Views: 33.9ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:38:42 -0430
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:38:42 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:38:42 -0430
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:38:42 -0430
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/personas/" for 127.0.0.1 at 2013-03-08 12:39:59 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (1.1ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:40:00 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:40:00 -0430
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:40:00 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:40:00 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas/" for 127.0.0.1 at 2013-03-08 12:40:23 -0430
+Processing by PersonasController#index as HTML
+  [1m[36mPersona Load (1.1ms)[0m  [1mSELECT "personas".* FROM "personas" [0m
+  Rendered personas/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:40:23 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:40:23 -0430
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:40:23 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:40:23 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas/2" for 127.0.0.1 at 2013-03-08 12:40:25 -0430
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPersona Load (1.4ms)[0m  SELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered personas/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:40:25 -0430
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:40:25 -0430
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:40:25 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:40:25 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:41:43 -0430
+Processing by PersonasController#index as HTML
+  [1m[36mPersona Load (1.2ms)[0m  [1mSELECT "personas".* FROM "personas" [0m
+  Rendered personas/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:41:43 -0430
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:43 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:43 -0430
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:43 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas/new" for 127.0.0.1 at 2013-03-08 12:41:45 -0430
+Processing by PersonasController#new as HTML
+  Rendered personas/_form.html.erb (8.2ms)
+  Rendered personas/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:41:45 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:45 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:45 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:45 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:41:47 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (1.1ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:41:47 -0430
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:47 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:47 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:47 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas/new" for 127.0.0.1 at 2013-03-08 12:41:51 -0430
+Processing by PersonasController#new as HTML
+  Rendered personas/_form.html.erb (5.0ms)
+  Rendered personas/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:41:51 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:51 -0430
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:51 -0430
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:41:51 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/personas" for 127.0.0.1 at 2013-03-08 12:42:02 -0430
+Processing by PersonasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kqI7jGp2insKsWYcQPvKllAglWGe5J36iFLs2NIT7g=", "persona"=>{"id"=>"", "nombre"=>"Robin Hernandez", "telefono"=>"123123", "email"=>"qweqwe"}, "commit"=>"Create Persona"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "personas" ("created_at", "email", "nombre", "telefono", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Fri, 08 Mar 2013 17:12:02 UTC +00:00], ["email", "qweqwe"], ["nombre", "Robin Hernandez"], ["telefono", "123123"], ["updated_at", Fri, 08 Mar 2013 17:12:02 UTC +00:00]]
+PG::Error: ERROR:  duplicate key value violates unique constraint "index_personas_on_nombre"
+DETAIL:  Key (nombre)=(Robin Hernandez) already exists.
+: INSERT INTO "personas" ("created_at", "email", "nombre", "telefono", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 9ms
+
+ActiveRecord::RecordNotUnique (PG::Error: ERROR:  duplicate key value violates unique constraint "index_personas_on_nombre"
+DETAIL:  Key (nombre)=(Robin Hernandez) already exists.
+: INSERT INTO "personas" ("created_at", "email", "nombre", "telefono", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"):
+  app/controllers/personas_controller.rb:46:in `block in create'
+  app/controllers/personas_controller.rb:45:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.6ms)
+
+
+Started POST "/personas" for 127.0.0.1 at 2013-03-08 12:42:46 -0430
+Processing by PersonasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kqI7jGp2insKsWYcQPvKllAglWGe5J36iFLs2NIT7g=", "persona"=>{"id"=>"", "nombre"=>"Frank Villalba", "telefono"=>"No-tieneTelefono o no me lo se", "email"=>"no tiene correo"}, "commit"=>"Create Persona"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "personas" ("created_at", "email", "nombre", "telefono", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 08 Mar 2013 17:12:46 UTC +00:00], ["email", "no tiene correo"], ["nombre", "Frank Villalba"], ["telefono", "No-tieneTelefono o no me lo se"], ["updated_at", Fri, 08 Mar 2013 17:12:46 UTC +00:00]]
+  [1m[35m (13.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/personas/5
+Completed 302 Found in 18ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/personas/5" for 127.0.0.1 at 2013-03-08 12:42:46 -0430
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPersona Load (0.5ms)[0m  [1mSELECT "personas".* FROM "personas" WHERE "personas"."id" = $1 LIMIT 1[0m  [["id", "5"]]
+  Rendered personas/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:42:46 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:42:46 -0430
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:42:46 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:42:46 -0430
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/personas" for 127.0.0.1 at 2013-03-08 12:42:50 -0430
+Processing by PersonasController#index as HTML
+  [1m[35mPersona Load (0.4ms)[0m  SELECT "personas".* FROM "personas" 
+  Rendered personas/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 12:42:50 -0430
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 12:42:50 -0430
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 12:42:50 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 12:42:50 -0430
+Served asset /application.js - 304 Not Modified (1ms)
