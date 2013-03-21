@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Producto:</b>
+  <%= @movimiento.producto_id %>
+</p>
+
+<p>
+  <b>Cantidad:</b>
+  <%= @movimiento.cantidad %>
+</p>
+
+<p>
+  <b>Precio:</b>
+  <%= @movimiento.precio %>
+</p>
+
+<p>
+  <b>Persona:</b>
+  <%= @movimiento.persona_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_movimiento_path(@movimiento) %> |
+<%= link_to 'Back', movimientos_path %>
