@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  producto_id: 1
+  cantidad: 1
+  precio: 9.99
+  persona_id: 1
+
+two:
+  producto_id: 1
+  cantidad: 1
+  precio: 9.99
+  persona_id: 1
